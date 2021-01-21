@@ -147,6 +147,7 @@ namespace CourseLibrary.API.Services
                 {
                     collection = collection.OrderBy(a => a.FirstName).ThenBy(a => a.LastName);
                 }
+                //collection.ApplySort(authorsResourceParameters.OrderBy)
             }
 
             return PagedList<Author>.Create(collection,
